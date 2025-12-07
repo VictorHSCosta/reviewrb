@@ -1,10 +1,12 @@
-require "thor"
+require 'thor'
+require 'tty-prompt'
+require 'reviewrb/commands/init'
 
 module Reviewrb
   class CLI < Thor
-    desc "ask", "Start the ReviewRB CLI"
-    def ask
-      puts "Welcome to ReviewRB!"
+    desc 'init', 'Start the ReviewRB CLI'
+    def init
+      Reviewrb::Commands::Init.call
     end
   end
 end

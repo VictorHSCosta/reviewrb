@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     reviewrb (0.1.0)
+      pastel
       thor
       tty-prompt
 
